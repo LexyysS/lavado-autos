@@ -3,8 +3,6 @@ import { useRef } from "react"
 
 import NavBar from "./components/NavBar"
 import Cartelera from "./components/Cartelera"
-import CarteleraTapiz from "./components/CarteleraTapiz"
-import CarteleraOtros from "./components/CarteleraOtros"
 import Formulario from "./components/Formulario"
 import Acordion from "./components/Acordion"
 import ParallaxLavado from "./components/ParallaxBanner"
@@ -12,31 +10,31 @@ import ParallaxLavado from "./components/ParallaxBanner"
 import { Typography } from 'keep-react'
 
 
-import image from "./assets/lavado.jpg"
-import logo from "./assets/logo.png"
+import image from "../public/img/lavado.jpg"
+import logo from "../public/img/logo.png"
 
-import bgImage3 from "./assets/lavadoParallax.jpg"
+import bgImage3 from "../public/img/lavadoParallax.jpg"
 
-import IconoSimple from "./assets/icon-simple.png"
-import IconoEncerado from "./assets/icon-auto.png"
-import IconoAspirado from "./assets/icon-aspirado.png"
-import IconoFull from "./assets/icon-full.png"
-import iAuto from './assets/t-auto.png'
-import iSuv from './assets/t-suv.png'
-import i4x4 from './assets/t-4x4.png'
-import iconWhat from './assets/icon-what.png'
-import iconUbi from './assets/icon-ubi.png'
+import IconoSimple from "../public/img/icon-simple.png"
+import IconoEncerado from "../public/img/icon-auto.png"
+import IconoAspirado from "../public/img/icon-aspirado.png"
+import IconoFull from "../public/img/icon-full.png"
+import iAuto from '../public/img/t-auto.png'
+import iSuv from '../public/img/t-suv.png'
+import i4x4 from '../public/img/t-4x4.png'
+import iconWhat from '../public/img/icon-what.png'
+import iconUbi from '../public/img/icon-ubi.png'
 
 
-import auto from "./assets/auto.jpg"
-import suv from "./assets/suv.jpg"
-import camioneta from "./assets/4x4.jpg"
-import tapiz2 from "./assets/tapiz2sillas.jpg"
-import tapiz3 from "./assets/tapiz3sillas.jpg"
+import auto from "../public/img/auto.jpg"
+import suv from "../public/img/suv.jpg"
+import camioneta from "../public/img/4x4.jpg"
+import tapiz2 from "../public/img/tapiz2sillas.jpg"
+import tapiz3 from "../public/img/tapiz3sillas.jpg"
 
-import focos from "./assets/focos.png"
-import patentes from "./assets/patentes.jpg"
-import simunizado from "./assets/simunizado.jpg"
+import focos from "../public/img/focos.png"
+import patentes from "../public/img/patentes.jpg"
+import simunizado from "../public/img/simunizado.jpg"
 
 import { Alerta } from "./components/Alerta"
 import { useState } from "react"
