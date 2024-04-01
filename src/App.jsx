@@ -10,31 +10,31 @@ import ParallaxLavado from "./components/ParallaxBanner"
 import { Typography } from 'keep-react'
 
 
-import image from "../public/img/lavado.jpg"
-import logo from "../public/img/logo.png"
+import image from "/img/lavado.jpg"
+import logo from "/img/logo.png"
 
-import bgImage3 from "../public/img/lavadoParallax.jpg"
+import bgImage3 from "/img/lavadoParallax.jpg"
 
-import IconoSimple from "../public/img/icon-simple.png"
-import IconoEncerado from "../public/img/icon-auto.png"
-import IconoAspirado from "../public/img/icon-aspirado.png"
-import IconoFull from "../public/img/icon-full.png"
-import iAuto from '../public/img/t-auto.png'
-import iSuv from '../public/img/t-suv.png'
-import i4x4 from '../public/img/t-4x4.png'
-import iconWhat from '../public/img/icon-what.png'
-import iconUbi from '../public/img/icon-ubi.png'
+import IconoSimple from "/img/icon-simple.png"
+import IconoEncerado from "/img/icon-auto.png"
+import IconoAspirado from "/img/icon-aspirado.png"
+import IconoFull from "/img/icon-full.png"
+import iAuto from '/img/t-auto.png'
+import iSuv from '/img/t-suv.png'
+import i4x4 from '/img/t-4x4.png'
+import iconWhat from '/img/icon-what.png'
+import iconUbi from '/img/icon-ubi.png'
 
 
-import auto from "../public/img/auto.jpg"
-import suv from "../public/img/suv.jpg"
-import camioneta from "../public/img/4x4.jpg"
-import tapiz2 from "../public/img/tapiz2sillas.jpg"
-import tapiz3 from "../public/img/tapiz3sillas.jpg"
+import auto from "/img/auto.jpg"
+import suv from "/img/suv.jpg"
+import camioneta from "/img/4x4.jpg"
+import tapiz2 from "/img/tapiz2sillas.jpg"
+import tapiz3 from "/img/tapiz3sillas.jpg"
 
-import focos from "../public/img/focos.png"
-import patentes from "../public/img/patentes.jpg"
-import simunizado from "../public/img/simunizado.jpg"
+import focos from "/img/focos.png"
+import patentes from "/img/patentes.jpg"
+import simunizado from "/img/simunizado.jpg"
 
 import { Alerta } from "./components/Alerta"
 import { useState } from "react"
