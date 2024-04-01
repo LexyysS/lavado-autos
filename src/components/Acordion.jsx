@@ -1,14 +1,14 @@
-"use client";
+
 import { Accordion } from "keep-react";
 import { Plus } from "phosphor-react";
 import { Typography } from 'keep-react'
 
 const Acordion = ({titulo,contenido1,contenido2,contenido3,contenido4}) => {
   return (
-    <Accordion className="py-10  text-black w-full ">
-      <Accordion.Panel className="bg-[#98ceae] ">
+    <Accordion className="pb-10  text-black w-full rounded-md">
+      <Accordion.Panel className="bg-[#98ceae] rounded-md">
         <Accordion.Container>
-          <Accordion.Title ><Typography variant="body-4" className="font-bold uppercase text-[#225710] lg:text-[2vw] md:text-[5.5vw] text-[6vw]">{titulo}</Typography></Accordion.Title>
+          <Accordion.Title ><Typography variant="body-4" className="font-bold uppercase text-[#225710] text-[min(5vw,1.2rem)]">{titulo}</Typography></Accordion.Title>
           <Accordion.Icon>
             <Plus size={24} color="#444" />
           </Accordion.Icon>

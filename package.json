@@ -7,11 +7,13 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "@react-spring/parallax": "^9.7.3",
     "keep-react": "^1.1.0",
+    "netlify-lambda": "^2.0.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scroll-parallax": "^3.4.5"
@@ -28,6 +30,6 @@
     "gh-pages": "^6.1.1",
     "postcss": "^8.4.32",
     "tailwindcss": "^3.4.0",
-    "vite": "^4.4.0"
+    "vite": "^5.0.8"
   }
 }

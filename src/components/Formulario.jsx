@@ -54,7 +54,7 @@ const Formulario = ({setIsAlert}) => {
 
 
   return (
-    <div className="lg:w-1/2 md:w-full mx-5">
+    <div className="lg:w-1/2 md:w-full w-full mx-5 lg:order-2 ">
        
         <form  onSubmit={handleSubmit} className="bg-white shadow-xl rounded-xl py-10 px-5 mt-10 mb-10">
           {error && (

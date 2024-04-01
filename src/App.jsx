@@ -1,3 +1,6 @@
+import { useRef } from "react"
+
+
 import NavBar from "./components/NavBar"
 import Cartelera from "./components/Cartelera"
 import CarteleraTapiz from "./components/CarteleraTapiz"
@@ -11,7 +14,7 @@ import { Typography } from 'keep-react'
 
 import image from "./assets/lavado.jpg"
 import logo from "./assets/logo.png"
-import bgImage2 from "./assets/bg-auto.jpg"
+
 import bgImage3 from "./assets/lavadoParallax.jpg"
 
 import IconoSimple from "./assets/icon-simple.png"
@@ -44,7 +47,7 @@ import { ParallaxProvider } from "react-scroll-parallax"
 function App() {
   
   const [isAlert , setIsAlert] = useState(false)
-
+  
   
 
   return (
@@ -57,7 +60,7 @@ function App() {
           
       </header>
 
-      <div id="inicio" className="w-[100vw] pb-20 pt-2 shadow-md bg-cover bg-center bg-no-repeat xl:px-60 lg:px-50 md:px-28 px-5 h-screen xl:flex-row lg:flex-row md:flex-col sm:flex-col flex-col flex justify-center items-center" style={{backgroundBlendMode: "soft-light" ,backgroundColor:"rgba(0, 0, 0, 0.85)" , clipPath:"polygon(0 0, 100% 0%, 100% 100%, 50% 90%, 0 100%)" ,backgroundImage:`url(${image})`
+      <div id="inicio" className="min-w-[100dvw] pb-20 pt-2 shadow-md bg-cover bg-center bg-no-repeat xl:px-60 lg:px-50 md:px-28 px-5 h-screen xl:flex-row lg:flex-row md:flex-col sm:flex-col flex-col flex justify-center items-center" style={{backgroundBlendMode: "soft-light" ,backgroundColor:"rgba(0, 0, 0, 0.85)" , clipPath:"polygon(0 0, 100% 0%, 100% 100%, 50% 90%, 0 100%)" ,backgroundImage:`url(${image})`
       }}>
 
           <div className="lg:w-1/3 md:w-1/2 sm:w-1/2 xl:w-1/2  h-1/3 flex justify-center items-center" > 
@@ -69,9 +72,9 @@ function App() {
 
         <div className=" xl:w-1/2 lg:w-2/3  h-2/3 " style={{letterSpacing:"2px"}}>
           <Typography variant="heading-1" className="uppercase font-bold mb-3 py-4 lg:text-[4.5vw] md:text-[8vw] text-[12vw] leading-tight" style={{color:"transparent",WebkitBackgroundClip:'text' ,backgroundImage:'linear-gradient(25deg,#6df229 ,#225710)'}}>lavado de <span style={{color:"transparent",WebkitBackgroundClip:'text' ,backgroundImage:'linear-gradient(25deg,#d33469 ,#fc9ab6)'}}>autos</span></Typography>
-          <Typography variant="body-1 " className="text-white md:text-[2.5vw] lg:text-[1.25vw] leading-7">En Mr.Green, nos dedicamos a brindar un servicio de lavado de autos y alfombras que redefine la frescura y la elegancia. Cada vehículo y cada fibra son tratados con meticulosidad, ofreciendo un estándar de limpieza que va más allá de lo convencional. Experimenta la diferencia en cada detalle, desde el cuidado artesanal hasta el brillo renovado. Tu búsqueda de calidad y distinción <span style={{color:"#6df229"}}>comienza aquí</span></Typography>
+          <Typography variant="body-1 " className="text-white text-[min(4vw,1.2rem)] leading-7">En Mr.Green, nos dedicamos a brindar un servicio de lavado de autos y alfombras que redefine la frescura y la elegancia. Cada vehículo y cada fibra son tratados con meticulosidad, ofreciendo un estándar de limpieza que va más allá de lo convencional. Experimenta la diferencia en cada detalle, desde el cuidado artesanal hasta el brillo renovado. Tu búsqueda de calidad y distinción <span style={{color:"#6df229"}}>comienza aquí</span></Typography>
           
-          <Typography variant="body-1" className="text-white mt-5 lg:text-[1.25vw] md:text-[2.5vw]">Vé nuestros <a href="#precios" className="underline text-[#4bd60a] hover:text-[#fc9ab6]" > Precios</a></Typography>
+          <Typography variant="body-1" className="text-white mt-5 text-[min(4vw,1.2rem)]">Vé nuestros <a href="#precios" className="underline text-[#4bd60a] hover:text-[#fc9ab6]" > Precios</a></Typography>
           
         </div>
 
@@ -80,20 +83,22 @@ function App() {
 
       </div>
 
-      <div className="bg-slate-200 xl:px-60 lg:px-50 md:px-28 px-5 flex flex-col justify-center mb-10" id="precios"  >
+      <div className=" bg-slate-200 xl:px-60 lg:px-50 md:px-28 px-5 flex flex-col justify-center mb-10" id="precios"  >
 
           <div className="flex items-center justify-center h-1/4" >
-              <Typography variant="heading-3" className="uppercase font-bold text-[#fc9ab6] lg:text-[4vw] md:text-[7.8vw] text-[10vw]">Precios</Typography>
+              <Typography variant="heading-3" className="uppercase font-bold text-[#fc9ab6] text-[min(10vw,3.5rem)]">Precios</Typography>
             
           </div>
-          <Typography variant="heading-4" className="uppercase font-bold mb-5 mt-10 text-[#98ceae] lg:text-[3.5vw] md:text-[5.5vw] text-[8vw] text-center sm:text-left">Lavado de vehiculos</Typography>
-          <Acordion titulo="Tipo de lavados" contenido1="Lavado exterior con shampoo y Renovación de plásticos negros del vehículo." contenido2="Lavado Simple Y Agrega una capa de cera para un brillo y acabado final mejorado" contenido3="Aspirado interior , Paño húmedo en tablero y puertas , Lavado exterior básico " contenido4="Incluye todo en el Lavado aspirado más aplicación de silicona en el interior para un brillo duradero, y Lavado exterior con cera para un acabado completo y reluciente "/>
+          <Typography variant="heading-4" className="uppercase font-bold mb-5 mt-10 text-[#98ceae]  text-[min(8vw,3rem)] text-center md:text-left">Lavado de vehiculos</Typography>
           <div className="lg:flex w-full flex-wrap justify-center gap-2">
             <Cartelera nombre={"Auto"} UrlAuto={auto} PLavadoSimple={"$6.000"} PLavadoEncerado={"$7.000"} PLavadoAspirado={"$10.000"} PLavadoFull={"$14.000"} IconoSimple={IconoSimple} IconoEncerado={IconoEncerado} IconoAspirado={IconoAspirado} IconoFull={IconoFull} />
             <Cartelera nombre={"Suv"} UrlAuto={suv} PLavadoSimple={"$8.000"} PLavadoEncerado={"$10.000"} PLavadoAspirado={"$12.000"} PLavadoFull={"$17.000"} IconoSimple={IconoSimple} IconoEncerado={IconoEncerado} IconoAspirado={IconoAspirado} IconoFull={IconoFull} />
             <Cartelera nombre={"4x4"} UrlAuto={camioneta} PLavadoSimple={"$10.000"} PLavadoEncerado={"$13.000"} PLavadoAspirado={"$18.000"} PLavadoFull={"$22.000"} IconoSimple={IconoSimple} IconoEncerado={IconoEncerado} IconoAspirado={IconoAspirado} IconoFull={IconoFull} />
 
           </div>
+          <Typography variant="body-3" className="mb-2 italic text-center">Mas información de lavados</Typography>
+          <Acordion titulo="Tipo de lavados" contenido1="Lavado exterior con shampoo y Renovación de plásticos negros del vehículo." contenido2="Lavado Simple Y Agrega una capa de cera para un brillo y acabado final mejorado" contenido3="Aspirado interior , Paño húmedo en tablero y puertas , Lavado exterior básico " contenido4="Incluye todo en el Lavado aspirado más aplicación de silicona en el interior para un brillo duradero, y Lavado exterior con cera para un acabado completo y reluciente "/>
+          
           
           
       </div>
@@ -112,12 +117,12 @@ function App() {
 
 
 
-      <div className="h-screen lg:px-60 md:px-28 pt-20" id="contacto">
-          <Typography variant="heading-3" className="uppercase text-center" >Contacto</Typography>
+      <div className="h-screen lg:px-60 md:px-28 pt-20 " id="contacto">
+          <Typography variant="heading-3" className="uppercase text-center text-[min(10vw,3rem)]" >Contacto</Typography>
 
           <div className="flex justify-center items-center lg:flex-row flex-col gap-2 w-full">
             
-            <div className="w-1/3 flex flex-col justify-center items-center">
+            <div className="lg:w-1/3 w-full flex flex-col justify-center items-center order-2 sm:order-1">
               <Typography variant="body-1" className="">O llamanos al</Typography>
               <div className="flex justify-center items-center ">
                   <img src={iconWhat} className="h-[58px]" alt="Logo whatsapp "/>
@@ -126,7 +131,7 @@ function App() {
 
             </div>
             <Formulario setIsAlert={setIsAlert}/>
-            <div className=" w-1/3 flex flex-col  justify-left items-center ">
+            <div className="lg:w-1/3 w-full flex flex-col  justify-left items-center order-3">
                 <img src={iconUbi} className="h-[58px]" alt="Logo Ubicacion "/>
                 <Typography variant="body-3" className="font-bold mt-2 italic">Jorge Andres Guerra N°89</Typography>
             </div>
